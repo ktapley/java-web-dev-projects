@@ -11,10 +11,11 @@ public class HelloWorld {
     String name = input.nextLine();
     System.out.println("Hello " + name);
 
-    Integer nums = NumericTypes.getNums();
+//    Integer nums = NumericTypes.getNums();
 
-    Double mileage = Double.valueOf(MilesPerGallon.getMiles());
+//    Double mileage = Double.valueOf(MilesPerGallon.getMiles());
 
+        String words = AliceQuote.getWord();
 
 
 }
