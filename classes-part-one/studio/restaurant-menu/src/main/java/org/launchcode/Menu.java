@@ -67,7 +67,7 @@ public class Menu {
 
     //TODO: Define removeItem()
     //Make sure to update lastUpdated anything something is removed
-    void  removeItem(MenuItem item) {
+    void removeItem(MenuItem item) {
         menuItems.remove(item);
         lastUpdated = LocalDate.now();
     }
