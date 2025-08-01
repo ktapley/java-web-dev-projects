@@ -11,7 +11,7 @@ public class HouseCat extends Cat {
         return !isHungry() && !isTired();
     }
 
-    @Override
+    @Override //Doesn't NEED the override, but is helpful to still have/use
     public String noise() {
         return "Hello, my name is " + name + "!";
     }
