@@ -4,6 +4,10 @@ public class Plane extends Vehicle{
 
     private double topSpeed;
 
+    public Plane(String type) {
+        super(type);
+    }
+
     public Plane(String type, boolean hasWheels, int occupancy, boolean isPrivatelyOwned) {
         super(type, hasWheels, occupancy, isPrivatelyOwned);
     }
@@ -17,6 +21,9 @@ public class Plane extends Vehicle{
     }
 
     public String flight() {
-        return "Ready for liftoff!";
+        if (getType().contains("plane")) {
+            return "Ready for liftoff!";
+        }
+        return "Vroom vroom";
     }
 }

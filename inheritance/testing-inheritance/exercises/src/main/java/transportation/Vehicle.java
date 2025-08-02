@@ -7,9 +7,8 @@ public class Vehicle {
     private int occupancy;
     private boolean isPrivatelyOwned = true;
 
-    public Vehicle(String type, int occupancy) {
+    public Vehicle(String type) {
         this.type = type;
-        this.occupancy = occupancy;
     }
 
     public Vehicle(String type, boolean hasWheels, int occupancy, boolean isPrivatelyOwned) {
@@ -53,20 +52,17 @@ public class Vehicle {
     }
 
     //If occupancy is < 15 then private owned = true, if > 15 then private owned = false?
-    public boolean privatelyOwned() {
+    public boolean privatelyOwned(int occupancy) {
         if (occupancy > 15) {
             return isPrivatelyOwned = false;
+        } else if (occupancy < 15) {
+            return isPrivatelyOwned = true;
         }
-            return true;
+        return true;
     }
 
     @Override
     public String toString() {
-        return "Vehicle{" +
-                "type='" + type + '\'' +
-                ", hasWheels=" + hasWheels +
-                ", occupancy=" + occupancy +
-                ", isPrivatelyOwned=" + isPrivatelyOwned +
-                '}';
+        return "Vroom vroom!";
     }
 }

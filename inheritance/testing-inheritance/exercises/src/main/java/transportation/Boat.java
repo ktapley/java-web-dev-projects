@@ -5,6 +5,12 @@ public class Boat extends Vehicle{
     private String make;
     private String color;
 
+    public Boat(String type, String make, String color) {
+        super(type);
+        this.make = make;
+        this.color = color;
+    }
+
     public Boat(String type, boolean hasWheels, int occupancy, boolean isPrivatelyOwned) {
         super(type, hasWheels, occupancy, isPrivatelyOwned);
     }
@@ -26,6 +32,9 @@ public class Boat extends Vehicle{
     }
 
     public String noise() {
-        return "I'm a boat!";
+        if (getType().contains("boat")) {
+            return "Rumble rumble";
+        }
+        return "Vroom vroom!";
     }
 }
