@@ -4,7 +4,7 @@ public class Plane extends Vehicle{
 
     private double topSpeed;
 
-    public Plane(String type, boolean hasWheels, double occupancy, boolean isPrivatelyOwned) {
+    public Plane(String type, boolean hasWheels, int occupancy, boolean isPrivatelyOwned) {
         super(type, hasWheels, occupancy, isPrivatelyOwned);
     }
 

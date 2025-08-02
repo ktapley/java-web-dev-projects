@@ -5,7 +5,7 @@ public class Boat extends Vehicle{
     private String make;
     private String color;
 
-    public Boat(String type, boolean hasWheels, double occupancy, boolean isPrivatelyOwned) {
+    public Boat(String type, boolean hasWheels, int occupancy, boolean isPrivatelyOwned) {
         super(type, hasWheels, occupancy, isPrivatelyOwned);
     }
 
